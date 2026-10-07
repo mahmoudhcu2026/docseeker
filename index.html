@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DocSeeker – ابحث داخل ملفاتك | Search inside your files</title>
+<meta name="description" content="DocSeeker: free Windows program that finds files by their names and the words inside them, with smart Arabic search. Fully offline and private.">
+<meta property="og:title" content="DocSeeker – Search inside your files">
+<meta property="og:description" content="Find any file on your PC by its name or the words inside it. Smart Arabic search. Free, offline and private.">
+<meta property="og:image" content="screenshot-ar.png">
+<style>
+:root{--teal:#0f766e;--teal-d:#115e59;--ink:#1f2933;--mut:#5b6670;--bg:#f6f8f8;--card:#fff;--line:#dde3e3}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",Tahoma,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.7}
+a{color:var(--teal)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header{background:#fff;border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:12px;height:64px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;color:var(--ink);text-decoration:none}
+.logo svg{flex:none}
+.sp{flex:1}
+.lang{border:1px solid var(--line);background:#fff;border-radius:18px;padding:6px 14px;cursor:pointer;font:inherit;color:var(--teal)}
+.hero{padding:56px 0 40px;text-align:center}
+.hero h1{font-size:40px;line-height:1.25;margin:0 0 14px}
+.hero p.lead{font-size:20px;color:var(--mut);max-width:720px;margin:0 auto 28px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--teal);color:#fff;text-decoration:none;border-radius:10px;padding:14px 28px;font-size:18px;font-weight:600}
+.btn:hover{background:var(--teal-d)}
+.small{color:var(--mut);font-size:14px;margin-top:12px}
+.shot{margin:36px auto 0;max-width:980px;border-radius:12px;overflow:hidden;box-shadow:0 12px 40px #0002;border:1px solid var(--line);background:#fff}
+.shot img{display:block;width:100%;height:auto}
+section{padding:44px 0}
+h2{font-size:28px;margin:0 0 20px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{margin:0 0 6px;font-size:18px;color:var(--teal)}
+.card p{margin:0;color:var(--mut)}
+ol.steps{max-width:760px;margin:0 auto;padding-inline-start:22px}
+ol.steps li{margin:10px 0}
+.note{max-width:760px;margin:18px auto 0;background:#fff7e6;border:1px solid #f3d9a4;border-radius:10px;padding:14px 18px}
+.privacy{max-width:760px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px 26px}
+.privacy ul{margin:0;padding-inline-start:20px}
+footer{border-top:1px solid var(--line);background:#fff;padding:24px 0;color:var(--mut);font-size:14px;text-align:center}
+code{background:#eef3f3;padding:1px 6px;border-radius:4px}
+[data-lang]{display:none}
+html[lang=ar] [data-lang=ar], html[lang=en] [data-lang=en]{display:revert}
+@media (max-width:600px){.hero h1{font-size:30px}.hero p.lead{font-size:17px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round"><path d="M6 3h8l4 4v6"/><path d="M14 3v4h4"/><path d="M6 3v18h6"/><circle cx="16.5" cy="16.5" r="3.5"/><path d="M19 19l2.5 2.5"/></svg>DocSeeker</a>
+  <span class="sp"></span>
+  <button class="lang" id="langBtn" onclick="setLang(document.documentElement.lang==='ar'?'en':'ar')">English</button>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <h1 data-lang="ar">اعثر على أي ملف في جهازك<br>باسمه أو بالكلمات التي بداخله</h1>
+  <h1 data-lang="en">Find any file on your PC<br>by its name or the words inside it</h1>
+  <p class="lead" data-lang="ar">DocSeeker برنامج مجاني لنظام Windows يبحث داخل ملفات Word وPowerPoint وExcel وPDF، مع بحث عربي ذكي، ويعمل دون إنترنت دون أن تغادر ملفاتك جهازك.</p>
+  <p class="lead" data-lang="en">DocSeeker is a free Windows program that searches inside your Word, PowerPoint, Excel and PDF files, with smart Arabic search. It works offline, and your files never leave your PC.</p>
+  <a class="btn" href="https://github.com/mahmoudhcu2026/docseeker/releases/latest/download/DocSeeker-Setup.zip">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 19h16"/></svg>
+    <span data-lang="ar">تنزيل DocSeeker مجاناً</span><span data-lang="en">Download DocSeeker – free</span></a>
+  <div class="small" data-lang="ar">لنظام Windows 10 و11 · واجهة عربية وإنجليزية · <a href="https://github.com/mahmoudhcu2026/docseeker/releases">كل الإصدارات</a></div>
+  <div class="small" data-lang="en">For Windows 10 and 11 · Arabic and English interface · <a href="https://github.com/mahmoudhcu2026/docseeker/releases">All versions</a></div>
+  <div class="shot"><img id="shot" src="screenshot-ar.png" alt="DocSeeker"></div>
+</div></div>
+
+<section><div class="wrap">
+  <h2 data-lang="ar">لماذا DocSeeker؟</h2><h2 data-lang="en">Why DocSeeker?</h2>
+  <div class="grid">
+    <div class="card"><h3 data-lang="ar">يبحث داخل الملفات</h3><h3 data-lang="en">Searches inside files</h3>
+      <p data-lang="ar">Word وPowerPoint وExcel وPDF والملفات النصية، وليس الأسماء فقط. تظهر النتائج أثناء الكتابة.</p>
+      <p data-lang="en">Word, PowerPoint, Excel, PDF and text files, not just file names. Results appear as you type.</p></div>
+    <div class="card"><h3 data-lang="ar">بحث عربي ذكي</h3><h3 data-lang="en">Smart Arabic search</h3>
+      <p data-lang="ar">يتجاهل التشكيل واختلاف أ/ا/إ وة/ه وى/ي و«ال». البحث عن «عامل» يجد «العاملين».</p>
+      <p data-lang="en">Ignores diacritics and أ/ا/إ, ة/ه, ى/ي and «ال» differences. Searching عامل also finds العاملين.</p></div>
+    <div class="card"><h3 data-lang="ar">خصوصية تامة</h3><h3 data-lang="en">Fully private</h3>
+      <p data-lang="ar">يعمل دون إنترنت، ولا يرفع أي شيء، ولا حسابات ولا إعلانات. ملفات OneDrive السحابية لا تُنزَّل.</p>
+      <p data-lang="en">Works offline, uploads nothing, no accounts, no ads. Cloud-only OneDrive files are never downloaded.</p></div>
+    <div class="card"><h3 data-lang="ar">سريع وسهل</h3><h3 data-lang="en">Fast and simple</h3>
+      <p data-lang="ar">ابحث في الجهاز كاملاً أو في مجلدات تختارها، وشاهد الكلمات مظللة، وافتح الملف أو شاركه بنقرة.</p>
+      <p data-lang="en">Search the whole PC or chosen folders, see matches highlighted, and open or share a file in one click.</p></div>
+  </div>
+</div></section>
+
+<section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+  <h2 data-lang="ar">طريقة التثبيت</h2><h2 data-lang="en">How to install</h2>
+  <ol class="steps" data-lang="ar">
+    <li>اضغط زر <b>تنزيل DocSeeker</b> أعلاه، فيُحفظ الملف المضغوط في مجلد «التنزيلات».</li>
+    <li>اضغط على الملف بالزر الأيمن واختر <b>استخراج الكل</b> (Extract All).</li>
+    <li>افتح المجلد الناتج وانقر نقراً مزدوجاً على <code>DocSeeker-Setup.exe</code>.</li>
+    <li>إذا ظهرت نافذة زرقاء بعنوان «Windows protected your PC» فاضغط <b>More info</b> ثم <b>Run anyway</b>.</li>
+    <li>اضغط <b>Next</b> ثم <b>Install</b> ثم <b>Finish</b>. اختر المجلدات أو «كل الأقراص» وابدأ البحث.</li>
+  </ol>
+  <ol class="steps" data-lang="en">
+    <li>Click <b>Download DocSeeker</b> above. The zip file is saved to your Downloads folder.</li>
+    <li>Right-click the file and choose <b>Extract All</b>.</li>
+    <li>Open the extracted folder and double-click <code>DocSeeker-Setup.exe</code>.</li>
+    <li>If a blue window says "Windows protected your PC", click <b>More info</b>, then <b>Run anyway</b>.</li>
+    <li>Click <b>Next</b>, <b>Install</b>, then <b>Finish</b>. Choose your folders or "All drives" and start searching.</li>
+  </ol>
+  <div class="note" data-lang="ar">تظهر النافذة الزرقاء لأي برنامج جديد غير مسجّل لدى Microsoft بعد، ولا تعني وجود خطر. البرنامج لا يحتاج إلى صلاحيات المسؤول ويُثبَّت لحسابك فقط.</div>
+  <div class="note" data-lang="en">The blue window appears for any new program not yet registered with Microsoft; it does not mean anything is wrong. DocSeeker needs no administrator rights and installs for your account only.</div>
+</div></section>
+
+<section><div class="wrap">
+  <h2 data-lang="ar">خصوصيتك</h2><h2 data-lang="en">Your privacy</h2>
+  <div class="privacy" data-lang="ar"><ul>
+    <li>يُحفظ الفهرس والإعدادات وسجل البحث على جهازك فقط.</li>
+    <li>لا يُرسل أي ملف أو اسم ملف أو كلمة بحث إلى أي جهة، ولا يوجد تتبع ولا إعلانات.</li>
+    <li>الاتصال الوحيد بالإنترنت هو البحث عن إصدار جديد، وفتح واتساب أو تيليجرام أو Gmail عندما تختار المشاركة بنفسك.</li>
+  </ul></div>
+  <div class="privacy" data-lang="en"><ul>
+    <li>The index, settings and search history stay on your computer only.</li>
+    <li>No file, file name or search word is ever sent anywhere. No tracking, no ads.</li>
+    <li>The only internet use is checking for a new version, and opening WhatsApp, Telegram or Gmail when you choose to share.</li>
+  </ul></div>
+</div></section>
+
+<footer><div class="wrap">
+  <div data-lang="ar">DocSeeker · برنامج مجاني · للأسئلة والاقتراحات: <a href="https://github.com/mahmoudhcu2026/docseeker/issues">صفحة الملاحظات</a></div>
+  <div data-lang="en">DocSeeker · free software · Questions or suggestions: <a href="https://github.com/mahmoudhcu2026/docseeker/issues">GitHub Issues</a></div>
+</div></footer>
+
+<script>
+function setLang(l){
+  document.documentElement.lang = l; document.documentElement.dir = l === 'ar' ? 'rtl' : 'ltr';
+  document.getElementById('langBtn').textContent = l === 'ar' ? 'English' : 'العربية';
+  document.getElementById('shot').src = l === 'ar' ? 'screenshot-ar.png' : 'screenshot-en.png';
+  try { localStorage.setItem('ds-site-lang', l); } catch (e) {}
+}
+var saved = null; try { saved = localStorage.getItem('ds-site-lang'); } catch (e) {}
+setLang(saved || ((navigator.language || '').toLowerCase().indexOf('ar') === 0 ? 'ar' : 'en'));
+</script>
+</body>
+</html>
