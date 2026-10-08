@@ -5,7 +5,9 @@
 
 🌐 Website / الموقع: https://mahmoudhcu2026.github.io/docseeker/
 
-⬇️ **[Download DocSeeker-Setup.zip / تنزيل البرنامج](https://github.com/mahmoudhcu2026/docseeker/releases/latest/download/DocSeeker-Setup.zip)**
+<a href="https://apps.microsoft.com/detail/9P24KZVVPBDW?mode=direct"><img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Get it from Microsoft" width="200"></a>
+
+⬇️ Or download the installer directly / أو نزّل ملف التثبيت مباشرة: **[DocSeeker-Setup.zip](https://github.com/mahmoudhcu2026/docseeker/releases/latest/download/DocSeeker-Setup.zip)**
 
 ![DocSeeker](screenshot-en.png)
 
@@ -26,6 +28,9 @@
 - واجهة عربية وإنجليزية.
 
 ## Install / التثبيت
+**Easiest / الأسهل:** install from the [Microsoft Store](https://apps.microsoft.com/detail/9P24KZVVPBDW?mode=direct) — no warnings, automatic updates. — ثبّته من متجر Microsoft دون رسائل تحذير ومع تحديث تلقائي.
+
+**Or from the zip / أو من الملف المضغوط:**
 1. Download `DocSeeker-Setup.zip` and extract it. — نزّل الملف وفك الضغط عنه.
 2. Run `DocSeeker-Setup.exe`. If Windows shows "Windows protected your PC", click **More info → Run anyway**. — شغّل الملف، وإذا ظهرت رسالة الحماية اضغط **مزيد من المعلومات ← التشغيل على أي حال**.
 3. Choose the folders to index and start searching. — اختر المجلدات وابدأ البحث.
