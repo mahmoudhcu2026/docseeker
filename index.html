@@ -25,6 +25,9 @@ header .wrap{display:flex;align-items:center;gap:12px;height:64px}
 .hero p.lead{font-size:20px;color:var(--mut);max-width:720px;margin:0 auto 28px}
 .btn{display:inline-flex;align-items:center;gap:10px;background:var(--teal);color:#fff;text-decoration:none;border-radius:10px;padding:14px 28px;font-size:18px;font-weight:600}
 .btn:hover{background:var(--teal-d)}
+.store img{height:56px;width:auto;vertical-align:middle}
+.store{display:inline-block;border-radius:8px}
+.alt{margin-top:14px;font-size:15px}
 .small{color:var(--mut);font-size:14px;margin-top:12px}
 .shot{margin:36px auto 0;max-width:980px;border-radius:12px;overflow:hidden;box-shadow:0 12px 40px #0002;border:1px solid var(--line);background:#fff}
 .shot img{display:block;width:100%;height:auto}
@@ -58,9 +61,11 @@ html[lang=ar] [data-lang=ar], html[lang=en] [data-lang=en]{display:revert}
   <h1 data-lang="en">Find any file on your PC<br>by its name or the words inside it</h1>
   <p class="lead" data-lang="ar">DocSeeker برنامج مجاني لنظام Windows يبحث داخل ملفات Word وPowerPoint وExcel وPDF، مع بحث عربي ذكي، ويعمل دون إنترنت دون أن تغادر ملفاتك جهازك.</p>
   <p class="lead" data-lang="en">DocSeeker is a free Windows program that searches inside your Word, PowerPoint, Excel and PDF files, with smart Arabic search. It works offline, and your files never leave your PC.</p>
-  <a class="btn" href="https://github.com/mahmoudhcu2026/docseeker/releases/latest/download/DocSeeker-Setup.zip">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="M7 10l5 5 5-5"/><path d="M4 19h16"/></svg>
-    <span data-lang="ar">تنزيل DocSeeker مجاناً</span><span data-lang="en">Download DocSeeker – free</span></a>
+  <a class="store" href="https://apps.microsoft.com/detail/9P24KZVVPBDW?mode=direct" target="_blank" rel="noopener">
+    <img data-lang="ar" src="https://get.microsoft.com/images/ar%20dark.svg" alt="احصل عليه من Microsoft">
+    <img data-lang="en" src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Get it from Microsoft"></a>
+  <div class="alt" data-lang="ar">أو <a href="https://github.com/mahmoudhcu2026/docseeker/releases/latest/download/DocSeeker-Setup.zip">نزّل ملف التثبيت مباشرة (zip)</a></div>
+  <div class="alt" data-lang="en">or <a href="https://github.com/mahmoudhcu2026/docseeker/releases/latest/download/DocSeeker-Setup.zip">download the installer directly (zip)</a></div>
   <div class="small" data-lang="ar">لنظام Windows 10 و11 · واجهة عربية وإنجليزية · <a href="https://github.com/mahmoudhcu2026/docseeker/releases">كل الإصدارات</a></div>
   <div class="small" data-lang="en">For Windows 10 and 11 · Arabic and English interface · <a href="https://github.com/mahmoudhcu2026/docseeker/releases">All versions</a></div>
   <div class="shot"><img id="shot" src="screenshot-ar.png" alt="DocSeeker"></div>
@@ -87,21 +92,29 @@ html[lang=ar] [data-lang=ar], html[lang=en] [data-lang=en]{display:revert}
 <section style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
   <h2 data-lang="ar">طريقة التثبيت</h2><h2 data-lang="en">How to install</h2>
   <ol class="steps" data-lang="ar">
-    <li>اضغط زر <b>تنزيل DocSeeker</b> أعلاه، فيُحفظ الملف المضغوط في مجلد «التنزيلات».</li>
+    <li><b>الطريقة الأسهل:</b> اضغط زر <b>احصل عليه من Microsoft</b> أعلاه ثم <b>تثبيت</b> في متجر Microsoft. يُثبَّت البرنامج دون أي رسائل تحذير ويتحدث تلقائياً.</li>
+  </ol>
+  <p style="text-align:center;max-width:760px;margin:18px auto 6px" data-lang="ar"><b>أو التثبيت من الملف المضغوط:</b></p>
+  <ol class="steps" data-lang="ar">
+    <li>اضغط <b>نزّل ملف التثبيت مباشرة</b> أعلاه، فيُحفظ الملف المضغوط في مجلد «التنزيلات».</li>
     <li>اضغط على الملف بالزر الأيمن واختر <b>استخراج الكل</b> (Extract All).</li>
     <li>افتح المجلد الناتج وانقر نقراً مزدوجاً على <code>DocSeeker-Setup.exe</code>.</li>
     <li>إذا ظهرت نافذة زرقاء بعنوان «Windows protected your PC» فاضغط <b>More info</b> ثم <b>Run anyway</b>.</li>
     <li>اضغط <b>Next</b> ثم <b>Install</b> ثم <b>Finish</b>. اختر المجلدات أو «كل الأقراص» وابدأ البحث.</li>
   </ol>
   <ol class="steps" data-lang="en">
-    <li>Click <b>Download DocSeeker</b> above. The zip file is saved to your Downloads folder.</li>
+    <li><b>Easiest:</b> click <b>Get it from Microsoft</b> above, then <b>Install</b> in the Microsoft Store. It installs with no warnings and updates automatically.</li>
+  </ol>
+  <p style="text-align:center;max-width:760px;margin:18px auto 6px" data-lang="en"><b>Or install from the zip file:</b></p>
+  <ol class="steps" data-lang="en">
+    <li>Click <b>download the installer directly</b> above. The zip file is saved to your Downloads folder.</li>
     <li>Right-click the file and choose <b>Extract All</b>.</li>
     <li>Open the extracted folder and double-click <code>DocSeeker-Setup.exe</code>.</li>
     <li>If a blue window says "Windows protected your PC", click <b>More info</b>, then <b>Run anyway</b>.</li>
     <li>Click <b>Next</b>, <b>Install</b>, then <b>Finish</b>. Choose your folders or "All drives" and start searching.</li>
   </ol>
-  <div class="note" data-lang="ar">تظهر النافذة الزرقاء لأي برنامج جديد غير مسجّل لدى Microsoft بعد، ولا تعني وجود خطر. البرنامج لا يحتاج إلى صلاحيات المسؤول ويُثبَّت لحسابك فقط.</div>
-  <div class="note" data-lang="en">The blue window appears for any new program not yet registered with Microsoft; it does not mean anything is wrong. DocSeeker needs no administrator rights and installs for your account only.</div>
+  <div class="note" data-lang="ar">في طريقة الملف المضغوط فقط: تظهر النافذة الزرقاء لأي برنامج جديد غير مسجّل لدى Microsoft بعد، ولا تعني وجود خطر. البرنامج لا يحتاج إلى صلاحيات المسؤول ويُثبَّت لحسابك فقط.</div>
+  <div class="note" data-lang="en">Zip file only: the blue window appears for any new program not yet registered with Microsoft; it does not mean anything is wrong. DocSeeker needs no administrator rights and installs for your account only.</div>
 </div></section>
 
 <section><div class="wrap">
