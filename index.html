@@ -3,11 +3,62 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>DocSeeker – ابحث داخل ملفاتك | Search inside your files</title>
-<meta name="description" content="DocSeeker: free Windows program that finds files by their names and the words inside them, with smart Arabic search. Fully offline and private.">
-<meta property="og:title" content="DocSeeker – Search inside your files">
-<meta property="og:description" content="Find any file on your PC by its name or the words inside it. Smart Arabic search. Free, offline and private.">
-<meta property="og:image" content="screenshot-ar.png">
+<title>DocSeeker – برنامج البحث داخل محتوى الملفات | Search inside your files on Windows</title>
+<meta name="description" content="DocSeeker برنامج مجاني لويندوز يبحث في أسماء الملفات والكلمات داخلها: Word وExcel وPowerPoint وPDF والملفات المضغوطة zip وrar و7z، مع بحث عربي ذكي ودون إنترنت. Free Windows full-text file search with smart Arabic support.">
+<link rel="canonical" href="https://mahmoudhcu2026.github.io/docseeker/">
+<meta name="theme-color" content="#0f766e">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mahmoudhcu2026.github.io/docseeker/">
+<meta property="og:site_name" content="DocSeeker">
+<meta property="og:title" content="DocSeeker – ابحث داخل ملفاتك | Search inside your files">
+<meta property="og:description" content="اعثر على أي ملف في جهازك باسمه أو بالكلمات التي بداخله، حتى داخل الملفات المضغوطة. مجاني، بحث عربي ذكي، يعمل دون إنترنت. Find any file on your PC by the words inside it.">
+<meta property="og:image" content="https://mahmoudhcu2026.github.io/docseeker/screenshot-ar.png">
+<meta property="og:image:alt" content="DocSeeker">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DocSeeker – Search inside your files">
+<meta name="twitter:description" content="Free Windows full-text file search with smart Arabic support. Word, Excel, PowerPoint, PDF and files inside zip/rar/7z. Works offline.">
+<meta name="twitter:image" content="https://mahmoudhcu2026.github.io/docseeker/screenshot-en.png">
+<meta name="msapplication-TileColor" content="#0f766e">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230f766e' stroke-width='2' stroke-linecap='round'%3E%3Cpath d='M6 3h8l4 4v6'/%3E%3Cpath d='M14 3v4h4'/%3E%3Cpath d='M6 3v18h6'/%3E%3Ccircle cx='16.5' cy='16.5' r='3.5'/%3E%3Cpath d='M19 19l2.5 2.5'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "name": "DocSeeker",
+ "alternateName": "دوك سيكر",
+ "applicationCategory": "UtilitiesApplication",
+ "operatingSystem": "Windows 10, Windows 11",
+ "softwareVersion": "2.3.0",
+ "inLanguage": [
+  "ar",
+  "en"
+ ],
+ "url": "https://mahmoudhcu2026.github.io/docseeker/",
+ "downloadUrl": "https://apps.microsoft.com/detail/9P24KZVVPBDW",
+ "installUrl": "https://apps.microsoft.com/detail/9P24KZVVPBDW",
+ "image": "https://mahmoudhcu2026.github.io/docseeker/screenshot-en.png",
+ "screenshot": [
+  "https://mahmoudhcu2026.github.io/docseeker/screenshot-ar.png",
+  "https://mahmoudhcu2026.github.io/docseeker/screenshot-en.png"
+ ],
+ "offers": {
+  "@type": "Offer",
+  "price": "0",
+  "priceCurrency": "USD"
+ },
+ "description": "Free Windows program that finds files by their names and the words inside them: Word, Excel, PowerPoint, PDF, text, and files inside .zip, .rar and .7z. Smart Arabic search. Works offline.",
+ "featureList": [
+  "Full-text search inside Word, Excel, PowerPoint and PDF files",
+  "Search inside .zip, .rar and .7z archives",
+  "Old Office formats .doc, .xls, .ppt",
+  "Smart Arabic search (ignores diacritics, hamza and taa marbuta differences)",
+  "Works offline; files never leave your PC",
+  "Arabic and English interface"
+ ]
+}
+</script>
 <style>
 :root{--teal:#0f766e;--teal-d:#115e59;--ink:#1f2933;--mut:#5b6670;--bg:#f6f8f8;--card:#fff;--line:#dde3e3}
 *{box-sizing:border-box}
@@ -33,7 +84,7 @@ header .wrap{display:flex;align-items:center;gap:12px;height:64px}
 .shot img{display:block;width:100%;height:auto}
 section{padding:44px 0}
 h2{font-size:28px;margin:0 0 20px;text-align:center}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
 .card h3{margin:0 0 6px;font-size:18px;color:var(--teal)}
 .card p{margin:0;color:var(--mut)}
@@ -59,8 +110,8 @@ html[lang=ar] [data-lang=ar], html[lang=en] [data-lang=en]{display:revert}
 <div class="hero"><div class="wrap">
   <h1 data-lang="ar">اعثر على أي ملف في جهازك<br>باسمه أو بالكلمات التي بداخله</h1>
   <h1 data-lang="en">Find any file on your PC<br>by its name or the words inside it</h1>
-  <p class="lead" data-lang="ar">DocSeeker برنامج مجاني لنظام Windows يبحث داخل ملفات Word وPowerPoint وExcel وPDF، مع بحث عربي ذكي، ويعمل دون إنترنت دون أن تغادر ملفاتك جهازك.</p>
-  <p class="lead" data-lang="en">DocSeeker is a free Windows program that searches inside your Word, PowerPoint, Excel and PDF files, with smart Arabic search. It works offline, and your files never leave your PC.</p>
+  <p class="lead" data-lang="ar">DocSeeker برنامج مجاني لنظام Windows يبحث داخل ملفات Word وPowerPoint وExcel وPDF، وداخل الملفات المضغوطة zip وrar و7z، مع بحث عربي ذكي، ويعمل دون إنترنت دون أن تغادر ملفاتك جهازك.</p>
+  <p class="lead" data-lang="en">DocSeeker is a free Windows program that searches inside your Word, PowerPoint, Excel and PDF files, and inside .zip, .rar and .7z archives, with smart Arabic search. It works offline, and your files never leave your PC.</p>
   <a class="store" href="https://apps.microsoft.com/detail/9P24KZVVPBDW?mode=direct" target="_blank" rel="noopener">
     <img data-lang="ar" src="https://get.microsoft.com/images/ar%20dark.svg" alt="احصل عليه من Microsoft">
     <img data-lang="en" src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Get it from Microsoft"></a>
@@ -86,6 +137,12 @@ html[lang=ar] [data-lang=ar], html[lang=en] [data-lang=en]{display:revert}
     <div class="card"><h3 data-lang="ar">سريع وسهل</h3><h3 data-lang="en">Fast and simple</h3>
       <p data-lang="ar">ابحث في الجهاز كاملاً أو في مجلدات تختارها، وشاهد الكلمات مظللة، وافتح الملف أو شاركه بنقرة.</p>
       <p data-lang="en">Search the whole PC or chosen folders, see matches highlighted, and open or share a file in one click.</p></div>
+    <div class="card"><h3 data-lang="ar">داخل الملفات المضغوطة</h3><h3 data-lang="en">Inside compressed files</h3>
+      <p data-lang="ar">يبحث في أسماء ومحتوى الملفات الموجودة داخل zip وrar و7z، حتى المحمية بكلمة مرور إذا حفظتها.</p>
+      <p data-lang="en">Searches the names and contents of files inside .zip, .rar and .7z, even password-protected ones once you save the password.</p></div>
+    <div class="card"><h3 data-lang="ar">ملفات Office القديمة</h3><h3 data-lang="en">Old Office files</h3>
+      <p data-lang="ar">يقرأ محتوى ملفات .doc و.xls و.ppt القديمة (97-2003) إلى جانب الصيغ الحديثة.</p>
+      <p data-lang="en">Reads the contents of old .doc, .xls and .ppt files (Office 97-2003) as well as the modern formats.</p></div>
   </div>
 </div></section>
 
@@ -132,8 +189,8 @@ html[lang=ar] [data-lang=ar], html[lang=en] [data-lang=en]{display:revert}
 </div></section>
 
 <footer><div class="wrap">
-  <div data-lang="ar">DocSeeker · برنامج مجاني · للأسئلة والاقتراحات: <a href="https://github.com/mahmoudhcu2026/docseeker/issues">صفحة الملاحظات</a></div>
-  <div data-lang="en">DocSeeker · free software · Questions or suggestions: <a href="https://github.com/mahmoudhcu2026/docseeker/issues">GitHub Issues</a></div>
+  <div data-lang="ar">DocSeeker · برنامج مجاني · للأسئلة والاقتراحات: <a href="https://github.com/mahmoudhcu2026/docseeker/issues">صفحة الملاحظات</a> · <a href="privacy.html">سياسة الخصوصية</a></div>
+  <div data-lang="en">DocSeeker · free software · Questions or suggestions: <a href="https://github.com/mahmoudhcu2026/docseeker/issues">GitHub Issues</a> · <a href="privacy.html">Privacy policy</a></div>
 </div></footer>
 
 <script>
